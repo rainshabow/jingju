@@ -1,0 +1,47 @@
+# 环境变量（含 API 密钥，严禁提交）
+.env
+
+# 依赖
+node_modules/
+
+# 构建产物
+dist/
+.vite/
+
+# 数据库（含分析结果）
+data/*.db
+data/*.db-shm
+data/*.db-wal
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+.reasonix/truncated-results/
+data/赛题1-I京剧数据集
+
+# 本地工具产物
+.codex-logs/
+.agents/
+skills-lock.json
+
+# 输出/汇报文件
+outputs/
+
+# 课程作业文档（个人项目仅保留代码与 README）
+docs/
+介绍文档.md
+介绍文档.txt
+可视化大作业汇报(2).pptx
+PPT大纲.md
+项目梳理.md
+项目核心代码与工作流分析.md
+
+# 服务端运行时数据（数据库/上传剧本）
+packages/server/data/

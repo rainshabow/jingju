@@ -1,0 +1,16 @@
+{
+  "name": "jingju-vis",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n server,web -c blue,green \"cd packages/server && npx nodemon --exec npx tsx src/index.ts\" \"cd packages/web && npx vite\" --kill-others",
+    "dev:server": "cd packages/server && npx nodemon --exec npx tsx src/index.ts",
+    "dev:web": "cd packages/web && npx vite",
+    "build": "pnpm -r run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  }
+}
